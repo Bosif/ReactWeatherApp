@@ -7,7 +7,7 @@ export default function Weather() {
   const [temperature, setTemperature] = useState(null);
   function handleResponse(response) {
     console.log(response.data);
-    setTemperature(response.temperature);
+    setTemperature(response.temperature.current);
     setReady(true);
   }
 
